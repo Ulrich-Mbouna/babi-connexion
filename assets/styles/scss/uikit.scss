@@ -1,0 +1,21 @@
+$primary-color: #F5831F;
+$secondary-color: #61C454;
+$button-primary-background: $primary-color;
+$text-primary-color: $primary-color;
+$card-badge-background: $secondary-color;
+$label-background: $secondary-color;
+$text-primary-color: $primary-color;
+$base-link-hover-text-decoration: none;
+
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+@mixin hook-card() {
+  @apply rounded-md;
+}
+
+@mixin hook-button() {
+  @apply rounded-md font-medium uppercase;
+}
+
+@import "uikit/src/scss/uikit-theme.scss";
