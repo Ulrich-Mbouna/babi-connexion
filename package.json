@@ -10,7 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@formkit/core": "^1.6.3",
+    "@formkit/icons": "^1.6.3",
+    "@formkit/nuxt": "^1.6.3",
+    "@formkit/vue": "^1.6.3",
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "libphonenumber-js": "^1.11.2",
+    "maz-ui": "^3.43.4",
     "nuxt": "^3.11.2",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"

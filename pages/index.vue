@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <ToTop />
+    <GlobalToTop />
     <section class="uk-section uk-section-small uk-padding-remove-vertical">
       <div class="uk-position-relative" uk-slideshow="ratio:false">
         <div class="uk-slideshow-items" uk-height-viewport="min-height:500;offset-top: true; offset-bottom:25"
@@ -194,14 +194,13 @@
       </div>
       </div>
     </section>
-    <TheFooter />
+    <GlobalTheFooter />
   </div>
 </template>
 
 <script lang="ts" setup>
 
-import Card from "~/components/Card.vue";
-import ToTop from "~/components/ToTop.vue";
+import Card from "~/components/Style/Card.vue";
 
 const categories = [
   {

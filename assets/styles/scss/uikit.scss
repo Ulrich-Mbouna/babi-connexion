@@ -18,4 +18,8 @@ $base-link-hover-text-decoration: none;
   @apply rounded-md font-medium uppercase;
 }
 
+@mixin hook-form-label() {
+  @apply font-medium
+}
+
 @import "uikit/src/scss/uikit-theme.scss";

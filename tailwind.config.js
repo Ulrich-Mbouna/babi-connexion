@@ -1,4 +1,6 @@
 export default {
-    content: [],
+    content: [
+        './formkit.theme.ts'
+    ],
     important: true
 }
