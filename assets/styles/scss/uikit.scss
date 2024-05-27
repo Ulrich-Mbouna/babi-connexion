@@ -15,7 +15,7 @@ $base-link-hover-text-decoration: none;
 }
 
 @mixin hook-button() {
-  @apply rounded-md font-medium uppercase;
+  @apply font-medium uppercase;
 }
 
 @mixin hook-form-label() {

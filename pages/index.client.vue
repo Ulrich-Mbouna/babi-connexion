@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <GlobalToTop />
+    <ToTop />
     <section class="uk-section uk-section-small uk-padding-remove-vertical">
       <div class="uk-position-relative" uk-slideshow="ratio:false">
         <div class="uk-slideshow-items" uk-height-viewport="min-height:500;offset-top: true; offset-bottom:25"
@@ -128,7 +128,6 @@
         </div>
       </div>
     </section>
-    <div class=""></div>
     <section id="top-announces" class="uk-section uk-section-xsmall">
       <div class="uk-container uk-container-large">
         <h3 class="font-medium">Top des annonces</h3>
@@ -190,11 +189,11 @@
     <section class="uk-section uk-section-small uk-section-muted" id="publicity">
       <div class="uk-container uk-container-expand">
       <div class="uk-placeholder uk-text-center">
-        <p class="text-xl md:text-5xl">Espace publicitaire</p>
+        <p class="text-xl md:text-5xl">Espace publicit</p>
       </div>
       </div>
     </section>
-    <GlobalTheFooter />
+    <TheFooter />
   </div>
 </template>
 

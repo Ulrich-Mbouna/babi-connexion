@@ -9,7 +9,7 @@ const isConfirmationPasswordVisible = ref(false)
 <div class="">
   <form action="" class="uk-form-stacked uk-child-width-1-1" uk-grid>
     <fieldset class="uk-fieldset">
-      <legend class="uk-legend">Informations d’ authentification</legend>
+      <legend class="uk-legend max-sm:text-xl">Informations d’ authentification</legend>
       <a href="#" uk-toggle="target:.register-section" class="flex items-center group text-primary">
         <span uk-icon="arrow-left" class="group-hover:-translate-x-1 transition-all duration-500 align-middle"></span>
         <span >Back</span>
@@ -31,11 +31,13 @@ const isConfirmationPasswordVisible = ref(false)
           </div>
       </div>
       <div class="uk-margin">
-        <label for="email" class="uk-form-label">Adresse Email</label>
+        <label for="email" class="uk-form-label">Téléphone</label>
         <div class="uk-form-controls">
           <MazPhoneNumberInput
               v-model="phoneNumber"
               v-model:country-code="countryCode"
+              :no-flags="false"
+              country-selector-display-name
               class="w-full"
           />
         </div>
