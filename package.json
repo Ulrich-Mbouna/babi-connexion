@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@formkit/addons": "^1.6.3",
     "@formkit/core": "^1.6.3",
     "@formkit/icons": "^1.6.3",
     "@formkit/nuxt": "^1.6.3",
@@ -23,6 +24,8 @@
   },
   "devDependencies": {
     "sass": "^1.77.2",
-    "uikit": "^3.21.4"
+    "typescript": "^5.4.5",
+    "uikit": "^3.21.4",
+    "vue-tsc": "^1"
   }
 }

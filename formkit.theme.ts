@@ -6,7 +6,7 @@ import type { FormKitNode } from '@formkit/core'
   * edited unless you’d like to "eject" from the CLI’s ability to update it.
   *
   * @checksum - f3ff32fcda0a82c09dbc6c7cf793d8bcdc83fff69d9310fcc7772cd6f4d5a773
-  * @variables - 
+  * @variables -
   * @theme - regenesis
   **/
 
@@ -54,7 +54,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "appearance-none": true,
     "[color-scheme:light]": true,
     "dark:[color-scheme:dark]": true,
-    "selection:bg-blue-100": true,
+    "selection:bg-white": true,
     "selection:text-neutral-700": true,
     "group-data-[has-overlay]:selection:!text-transparent": true,
     "font-bold": true,
@@ -75,11 +75,10 @@ const classes: Record<string, Record<string, boolean>> = {
     "group-data-[prefix-icon]:pl-5": true,
     "group-data-[suffix-icon]:pr-5": true,
     "border": true,
-    "border-blue-600": true,
-    "text-blue-600": true,
+    "border-primary": true,
     "group-[]/repeater:shadow-sm": true,
     "group-[]/multistep:shadow-sm": true,
-    "dark:border-blue-500": true
+    "dark:border-primary": true
   },
   "family:box__wrapper": {
     "inline-flex": true,
@@ -217,8 +216,8 @@ const classes: Record<string, Record<string, boolean>> = {
     "border-neutral-400": true,
     "bg-white": true,
     "focus-within:ring-1": true,
-    "focus-within:!ring-blue-500": true,
-    "focus-within:!border-blue-500": true,
+    "focus-within:!ring-primary": true,
+    "focus-within:!border-primary": true,
     "group-data-[invalid]:border-red-500": true,
     "group-data-[invalid]:ring-1": true,
     "group-data-[invalid]:ring-red-500": true,
@@ -253,7 +252,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "dark:text-neutral-300": true,
     "border-none": true,
     "p-0": true,
-    "focus:ring-0": true
+    "focus:ring-0": true,
   },
   "family:text__prefixIcon": {
     "flex": true,
@@ -583,9 +582,14 @@ const classes: Record<string, Record<string, boolean>> = {
     "selection:bg-blue-100": true,
     "selection:text-neutral-700": true,
     "group-data-[has-overlay]:selection:!text-transparent": true,
-    "bg-blue-50": true,
-    "hover:bg-blue-100": true,
-    "dark:text-blue-500": true,
+    "bg-white": true,
+    "hover:bg-primary": true,
+    "transition-all": true,
+    "w-full": true,
+    "justify-center": true,
+    "duration-500": true,
+    "hover:text-white": true,
+    "dark:text-white": true,
     "dark:bg-transparent": true,
     "dark:hover:bg-blue-50/5": true
   },
@@ -1019,11 +1023,13 @@ const classes: Record<string, Record<string, boolean>> = {
     "selection:bg-blue-100": true,
     "selection:text-neutral-700": true,
     "group-data-[has-overlay]:selection:!text-transparent": true,
-    "bg-blue-600": true,
+    "bg-primary": true,
+    "w-full": true,
+    "justify-center": true,
     "!text-white": true,
     "active:text-blue-100": true,
     "active:bg-blue-700": true,
-    "hover:bg-blue-700": true,
+    "hover:bg-primary/80": true,
     "disabled:border-neutral-400": true,
     "disabled:bg-neutral-400": true,
     "disabled:text-neutral-100": true,
@@ -3211,7 +3217,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "group-data-[tab-style=progress]/wrapper:after:top-[0.5em]": true,
     "group-data-[tab-style=progress]/wrapper:after:left-[calc(50%+0.5em)]": true,
     "group-data-[tab-style=progress]/wrapper:after:bg-neutral-300": true,
-    "group-data-[tab-style=progress]/wrapper:data-[valid=true]:data-[visited=true]:after:bg-blue-600": true,
+    "group-data-[tab-style=progress]/wrapper:data-[valid=true]:data-[visited=true]:after:bg-primary": true,
     "group-data-[tab-style=progress]/wrapper:last:after:hidden": true,
     "dark:group-data-[tab-style=progress]/wrapper:after:bg-neutral-600": true,
     "dark:group-data-[tab-style=progress]/wrapper:data-[valid=true]:data-[visited=true]:after:bg-blue-600": true
@@ -3237,7 +3243,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "[line-height:1.25rem]": true,
     "text-white": true,
     "rounded-full": true,
-    "group-data-[valid=true]/tab:bg-blue-600": true,
+    "group-data-[valid=true]/tab:bg-primary": true,
     "group-data-[tab-style=tab]/wrapper:text-[0.66rem]": true,
     "group-data-[tab-style=tab]/wrapper:p-1.5": true,
     "group-data-[tab-style=tab]/wrapper:w-5": true,
@@ -3257,7 +3263,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "mt-0.5": true
   },
   "multi-step__steps": {
-    "px-10": true,
+    "px-4": true,
     "pt-8": true,
     "pb-4": true,
     "bg-white": true,
@@ -3281,7 +3287,8 @@ const classes: Record<string, Record<string, boolean>> = {
     "mr-1.5": true
   },
   "step__stepNext": {
-    "ml-auto": true
+    "ml-auto": true,
+    "w-full": true,
   }
 };
 

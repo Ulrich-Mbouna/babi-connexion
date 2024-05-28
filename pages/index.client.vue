@@ -58,7 +58,7 @@
                       </li>
                       <li class="uk-nav-divider"></li>
                       <li>
-                        <nuxt-link class="uk-button uk-button-small uk-button-text text-black">Créer un compte
+                        <nuxt-link to="/register" class="uk-button uk-button-small uk-button-text text-black">Créer un compte
                         </nuxt-link>
                       </li>
                       <li>

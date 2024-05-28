@@ -14,5 +14,5 @@ export default {
             },
         }
     },
-    important: true
+    important: true,
 }
