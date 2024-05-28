@@ -12,12 +12,33 @@ declare global {
         password: string;
         password_confirmation: string;
         phone: string;
-        role: string;
     }
 
     interface UserRegisterAgent extends UserRegister {
         avatar: string;
         identityCard: string
+    }
+
+    interface IdentityPayload {
+        role: string;
+        avatar: FileInput[];
+        identityCard: FileInput[];
+    }
+
+    interface RequestOptions {
+        key: string;
+        baseURL: string;
+    }
+
+    interface FileInput {
+        name: string;
+        file: File
+    }
+
+    interface ToastPayload {
+        message: string;
+        position: string;
+        status: string;
     }
 
 }

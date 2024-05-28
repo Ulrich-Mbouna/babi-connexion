@@ -21,6 +21,9 @@ $base-link-hover-text-decoration: none;
 @mixin hook-form-label() {
   @apply font-medium
 }
+@mixin hook-notification() {
+  @apply rounded-md
+}
 
 @import "uikit/src/scss/uikit-theme.scss";
 

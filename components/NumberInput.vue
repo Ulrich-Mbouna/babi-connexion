@@ -24,6 +24,7 @@ const handleInput = (data) => {
       :model-value="props.context._value"
       @update="handleInput"
       country-locale="fr-FR"
+      :preferred-countries="['CM']"
       :translations="{
           countrySelector: {
             placeholder: 'Code Pays',

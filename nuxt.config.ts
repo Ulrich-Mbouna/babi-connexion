@@ -1,7 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: {enabled: true},
-    modules: ["@nuxtjs/tailwindcss", '@formkit/nuxt', 'maz-ui/nuxt'],
+    modules: [
+        "@nuxtjs/tailwindcss",
+        '@formkit/nuxt',
+        'maz-ui/nuxt',
+        "@sidebase/nuxt-auth"
+    ],
+    auth: {
+      baseURL: '/api/auth',
+      provider: {
+          type: 'local',
+      }
+    },
     "formkit": {
         autoImport: true
     },
@@ -15,5 +26,10 @@ export default defineNuxtConfig({
     },
     imports: {
         dirs: ['types']
+    },
+    runtimeConfig: {
+        public: {
+            apiBaseUrl: 'https://twinsdapi.soltgwebservices.net/v1'
+        }
     }
 })
