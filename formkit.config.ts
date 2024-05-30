@@ -10,9 +10,8 @@ export default defineFormKitConfig({
             input: 'rounded-md',
             inner: 'w-full',
             label: 'uk-form-label',
-            form: 'uk-form-stacked',
             wrapper: 'w-full',
-            outer:'w-full'
+            outer:'w-full max-w-full'
         }
     },
     icons: {

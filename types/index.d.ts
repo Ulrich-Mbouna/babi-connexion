@@ -35,10 +35,9 @@ declare global {
         file: File
     }
 
-    interface ToastPayload {
-        message: string;
-        position: string;
-        status: string;
+    interface SignInPayload {
+        username: string;
+        password: string;
     }
 
 }

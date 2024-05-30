@@ -8,18 +8,28 @@ export default defineNuxtConfig({
         "@sidebase/nuxt-auth"
     ],
     auth: {
-      baseURL: '/api/auth',
       provider: {
-          type: 'local',
+          type: 'refresh',
+          token: {
+              signInResponseTokenPointer: '/tokens/access/token'
+          },
+          refreshToken: {
+              signInResponseRefreshTokenPointer: '/tokens/refresh/token'
+          },
+
       }
     },
     "formkit": {
         autoImport: true
     },
     mazUi: {
-        injectComponents: true, injectAos: {
+        injectComponents: true,
+        injectAos: {
             injectCss: true,
-        }, injectUseToast: true, injectUseThemeHandler: true, devtools: true
+        },
+        injectUseToast: true,
+        injectUseThemeHandler: true,
+        devtools: true
     },
     tailwindcss: {
         exposeConfig: true

@@ -62,14 +62,14 @@
                         </nuxt-link>
                       </li>
                       <li>
-                        <nuxt-link to="" class="uk-button uk-button-small uk-button-default text-black">Se connecter</nuxt-link>
+                        <nuxt-link to="/login" class="uk-button uk-button-small uk-button-default text-black">Se connecter</nuxt-link>
                       </li>
                     </ul>
                   </div>
 
                   <div class="uk-navbar-item gap-3 uk-visible@m">
                     <nuxt-link to="/register" class="uk-button uk-button-small uk-button-text">Créer un compte</nuxt-link>
-                    <nuxt-link to="#" class="uk-button uk-button-small uk-button-text">Se connecter</nuxt-link>
+                    <nuxt-link to="/login" class="uk-button uk-button-small uk-button-text">Se connecter</nuxt-link>
                   </div>
                 </div>
               </div>
@@ -198,7 +198,6 @@
 </template>
 
 <script lang="ts" setup>
-
 import Card from "~/components/Style/Card.vue";
 
 const categories = [

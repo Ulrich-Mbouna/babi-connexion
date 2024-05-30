@@ -6,11 +6,6 @@ import {useToast} from "maz-ui";
 //
 const toast = useToast()
 
-const handleIconClick = (node:FormKitNode, e: MouseEvent) => {
-  node.props.suffixIcon = node.props.suffixIcon === 'eye' ? 'eyeClosed' : 'eye';
-  node.props.type = node.props.type === 'password' ? 'text' : 'password'
-}
-
 // Create Input Number
 const phonenumber = createInput(NumberInput)
 
@@ -61,20 +56,15 @@ const handleSubmit = async (data: {"multi-steps": {personal: UserRegister, ident
       </div>
       <FormKit
           :type="phonenumber"
-          :config="{
-            classes:{
-              outer: 'max-w-full'
-            }
-          }"
           name="phone"
           validation="required"
           label="Télephone" />
       <FormKit label="Adresse Email" type="email" name="email" placeholder='alex@gmail.com' validation="email|required" />
       <FormKit
-          suffix-icon="eyeClosed" @suffix-icon-click="handleIconClick"
+          suffix-icon="eyeClosed" @suffix-icon-click="usePasswordVisibility"
           label="Mot de Passe" name="password" type="password" validation="password|required" />
       <FormKit
-          suffix-icon="eyeClosed" name="password_confirm" @suffix-icon-click="handleIconClick"
+          suffix-icon="eyeClosed" name="password_confirm" @suffix-icon-click="usePasswordVisibility"
           label="Confirmer mot de password" type="password" validation="confirm|required" />
     </FormKit>
     <FormKit type="step" name="identity" previous-label="Précédent" label="Identité" :config="{
