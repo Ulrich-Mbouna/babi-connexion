@@ -5,13 +5,9 @@ const props = defineProps({
 
 const handleInput = (data) => {
   if (data.isValid) {
-    props.context.node.input(data.e164)
+    props.context.node.input(data.countryCallingCode + '' +data.nationalNumber)
   } else {
-    if (!data.countryCode) {
-      props.context.node.setErrors('Numéro de téléphone est obligatoire')
-    } else {
-      props.context.node.setErrors('Numéro de téléphone est incorrect')
-    }
+    props.context.node.setErrors('Numéro de téléphone est incorrect')
   }
 }
 </script>

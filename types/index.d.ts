@@ -1,3 +1,5 @@
+import type {UseFetchOptions} from "#app";
+
 declare global {
     enum UserType {
         PARTICULIER= 'particulier',
@@ -25,11 +27,6 @@ declare global {
         identityCard: FileInput[];
     }
 
-    interface RequestOptions {
-        key: string;
-        baseURL: string;
-    }
-
     interface FileInput {
         name: string;
         file: File
@@ -39,6 +36,10 @@ declare global {
         username: string;
         password: string;
     }
+    interface LoginWithOTP {
+        phone: string;
+    }
 
 }
+
 export  default {}

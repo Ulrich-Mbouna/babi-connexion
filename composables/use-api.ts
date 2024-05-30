@@ -1,18 +1,25 @@
 import {hash} from 'ohash'
+import type {UseFetchOptions} from "#app";
 
 
-export default (path:string, options: RequestOptions = <RequestOptions>{}) => {
+export default <T>(path:string, options: UseFetchOptions<T> = {}) => {
     const runtimeConfig = useRuntimeConfig();
     const key = options && options.key ? {
         key: hash(Date.now()),
     } : {}
 
-    return useFetch(path, {
+    const accessToken = useCookie('accessToken');
+
+    const defaults: UseFetchOptions<T> = {
         ...options,
         ...key,
         baseURL: options.baseURL ?? runtimeConfig.public.apiBaseUrl,
+        headers: accessToken.value ? {
+            Authorization: `Bearer ${accessToken.value}`
+        }: {},
         async onResponse({request,response, options} ) {
             response._data = response._data.data ?? response._data
+
         },
         async onResponseError({response}) {
             return new Promise((resolve, reject) => {
@@ -25,5 +32,7 @@ export default (path:string, options: RequestOptions = <RequestOptions>{}) => {
                 });
             })
         }
-    })
+    }
+
+    return useFetch(path,defaults)
 }
