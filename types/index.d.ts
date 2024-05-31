@@ -39,6 +39,10 @@ declare global {
     interface LoginWithOTP {
         phone: string;
     }
+    interface SuccessRequest {
+        status: boolean,
+        message: string,
+    }
 
 }
 

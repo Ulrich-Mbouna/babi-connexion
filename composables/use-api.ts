@@ -13,7 +13,7 @@ export default <T>(path:string, options: UseFetchOptions<T> = {}) => {
     const defaults: UseFetchOptions<T> = {
         ...options,
         ...key,
-        baseURL: options.baseURL ?? runtimeConfig.public.apiBaseUrl,
+        baseURL: options.baseURL ?? runtimeConfig.public.apiBaseUrl as string,
         headers: accessToken.value ? {
             Authorization: `Bearer ${accessToken.value}`
         }: {},

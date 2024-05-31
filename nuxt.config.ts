@@ -16,8 +16,11 @@ export default defineNuxtConfig({
           refreshToken: {
               signInResponseRefreshTokenPointer: '/tokens/refresh/token'
           },
-
-      }
+      },
+        session: {
+          enableRefreshOnWindowFocus: false,
+            enableRefreshPeriodically: false
+        }
     },
     "formkit": {
         autoImport: true

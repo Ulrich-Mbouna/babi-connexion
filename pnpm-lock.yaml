@@ -45,6 +45,9 @@ importers:
         specifier: ^4.3.2
         version: 4.3.2(vue@3.4.27(typescript@5.4.5))
     devDependencies:
+      '@types/uikit':
+        specifier: ^3.14.5
+        version: 3.14.5
       sass:
         specifier: ^1.77.2
         version: 1.77.2
@@ -1220,6 +1223,9 @@ packages:
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
+
+  '@types/uikit@3.14.5':
+    resolution: {integrity: sha512-3Q1CRzoAVLm+XNCP/2P5DbLuX98fkNLYxGQ1qUdV6cdzDTBbyVeH+est0LTZPtro9FUwXTNu8WfxfwLymFbZvQ==}
 
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
@@ -5903,6 +5909,8 @@ snapshots:
       undici-types: 5.26.5
 
   '@types/resolve@1.20.2': {}
+
+  '@types/uikit@3.14.5': {}
 
   '@types/web-bluetooth@0.0.20': {}
 

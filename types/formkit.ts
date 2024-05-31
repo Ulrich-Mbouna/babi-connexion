@@ -3,6 +3,10 @@ declare module "@formkit/inputs" {
         'phonenumber': {
             type: 'phonenumber',
             value?: number
-        }
+        },
+        'otpinput': {
+            type: 'otpinput',
+            value?: number
+        },
     }
 }

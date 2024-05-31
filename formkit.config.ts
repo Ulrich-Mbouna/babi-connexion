@@ -2,7 +2,7 @@ import  {defineFormKitConfig} from '@formkit/vue'
 import {rootClasses} from "~/formkit.theme";
 import {genesisIcons} from "@formkit/icons";
 import {createMultiStepPlugin} from "@formkit/addons";
-import {NumberInput} from "#components";
+import {NumberInput, OTPInput} from "#components";
 
 export default defineFormKitConfig({
     config: {
@@ -20,6 +20,7 @@ export default defineFormKitConfig({
     },
     plugins: [createMultiStepPlugin()],
     inputs: {
-        phonenumber: createInput(NumberInput)
+        phonenumber: createInput(NumberInput),
+        otpinput: createInput(OTPInput),
     }
 })

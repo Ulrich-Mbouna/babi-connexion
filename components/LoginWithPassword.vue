@@ -26,7 +26,7 @@ const handleSignIn = async (data: SignInPayload | LoginWithOTP, node: FormKitNod
 <FormKit type="form" @submit="handleSignIn">
   <div class="uk-margin">
     <FormKit id="email" label="Email ou Numéro de téléphone(avec indicatif)" name="username"
-             placeholder="alex@gmail.com" suffix-icon="email" type="email" validation="required"/>
+             placeholder="Entrer votre numéro" suffix-icon="email" type="text" validation="required"/>
   </div>
   <div class="uk-margin">
     <FormKit id="password" label="Mot de passe" name="password"
