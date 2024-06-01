@@ -5,7 +5,8 @@ export default defineNuxtConfig({
         "@nuxtjs/tailwindcss",
         '@formkit/nuxt',
         'maz-ui/nuxt',
-        "@sidebase/nuxt-auth"
+        "@sidebase/nuxt-auth",
+        "@nuxt/fonts"
     ],
     auth: {
       provider: {

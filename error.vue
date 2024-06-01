@@ -8,7 +8,7 @@ const handleError = () => clearError({redirect: '/'})
 </script>
 
 <template>
-<section class="uk-section uk-padding-remove-vertical uk-height-viewport uk-flex uk-flex-center uk-flex-middle">
+<section class="uk-section uk-padding-remove-vertical min-h-dvh uk-flex uk-flex-center uk-flex-middle">
   <div class="uk-container uk-container-xsmall">
     <div class="uk-width-large@s" uk-toggle="mode:media; media:@m; cls:uk-width-large@s uk-width-medium">
       <img src="/images/error.png" alt="Error Logo" />
