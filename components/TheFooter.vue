@@ -4,7 +4,7 @@
 
 <template>
 <footer>
-  <section class="uk-section uk-section-small uk-padding-small uk-section-default" uk-scrollspy="target:[uk-scrollspy-class; cls: uk-animation-fade; delay:false]">
+  <section class="uk-section uk-section-small pb-0 uk-padding-small uk-section-default" uk-scrollspy="target:[uk-scrollspy-class; cls: uk-animation-fade; delay:false]">
     <div class="uk-container uk-container-large">
       <div class="uk-child-width-1-2@s uk-flex-middle " uk-grid>
         <div class="uk-width-2-5@s">
@@ -31,7 +31,7 @@
                 </li>
                 <li>
                   <div class="uk-panel">
-                    <nuxt-link class="uk-link-text uk-margin-remove-last-child">Contact</nuxt-link>
+                    <nuxt-link to="/contact" class="uk-link-text uk-margin-remove-last-child">Contact</nuxt-link>
                   </div>
                 </li>
                 <li>
@@ -48,7 +48,7 @@
             </div>
             <div class=" ">
               <h3 class="uk-text-primary" uk-scrollspy-class>Contact</h3>
-              <ul class="uk-list uk-text-left" uk-scrollspy>
+              <ul class="uk-list uk-text-left uk-list-secondary" uk-scrollspy>
                 <li>
                   <div class="uk-panel">
                     <a href="tel:+228 93 24 05 84" class="uk-link-text uk-margin-remove-last-child flex items-center gap-1">
@@ -58,10 +58,10 @@
                   </div>
                 </li>
                 <li>
-                  <div class="uk-panel">
-                    <a href="mail:info@Babiconnexion.com" class="uk-link-text uk-margin-remove-last-child flex items-center gap-1">
+                  <div class="uk-panel overflow-auto">
+                    <a href="mailto:fo@Babiconnexion.com" class="uk-link-text uk-margin-remove-last-child flex items-center gap-1">
                       <span uk-icon="mail" class="mt-1 *:text-primary"></span>
-                      <span>info@Babiconnexion.com</span>
+                      <span class="break-words">info@Babiconnexion.com</span>
                     </a>
                   </div>
 
@@ -82,9 +82,9 @@
       </div>
       <hr>
       <div class="">
-        <div class="uk-flex uk-flex-middle uk-flex-between">
+        <div class="uk-flex uk-flex-middle uk-flex-wrap uk-flex-center uk-flex-between@s text-center gap-2">
           <div>Copyright BabiConnexion © 2023 Tous droits reservés</div>
-          <div class="*:text-primary hover:*:text-white hover:*:bg-primary *:transition-all *:duration-500">
+          <div class="text-center *:text-primary hover:*:text-white hover:*:bg-primary *:transition-all *:duration-500">
             <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="whatsapp"></a>
             <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="x"></a>
             <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>

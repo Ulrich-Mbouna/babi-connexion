@@ -6,7 +6,8 @@ export default defineNuxtConfig({
         '@formkit/nuxt',
         'maz-ui/nuxt',
         "@sidebase/nuxt-auth",
-        "@nuxt/fonts"
+        "@nuxt/fonts",
+        "nuxt-icon"
     ],
     auth: {
       provider: {
@@ -43,7 +44,8 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public: {
-            apiBaseUrl: 'https://twinsdapi.soltgwebservices.net/v1'
+            apiBaseUrl: 'https://twinsdapi.soltgwebservices.net/v1',
+            googleMapKey: process.env.GOOGLE_MAP_KEY
         }
     }
 })

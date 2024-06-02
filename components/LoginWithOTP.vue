@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { FormKitNode } from "@formkit/core";
 import UIkit from "uikit";
-import {useToast} from "maz-ui";
+import { useToast } from "maz-ui";
 
 const phone = ref("")
 const toast = useToast()
@@ -14,13 +14,13 @@ const submitHandler = async (formData: LoginWithOTP, node: FormKitNode) => {
   })
 
   try {
-    const response:{status: boolean, message: string} = await $fetch("/auth/otp-login", {
+    const response: { status: boolean, message: string } = await $fetch("/auth/otp-login", {
       method: "POST",
       body: formData,
       baseURL: runtimeConfig.public.apiBaseUrl as string
     })
 
-    if(response.status){
+    if (response.status) {
       toast.success('' + response.message)
       toggler.toggle()
     } else {
@@ -35,7 +35,7 @@ const submitHandler = async (formData: LoginWithOTP, node: FormKitNode) => {
 
 <template>
   <div class="">
-    <div class="otp-login" >
+    <div class="otp-login">
       <FormKit class="" submit-label="Obtenir un code" type="form" @submit="submitHandler">
         <FormKit label="Télephone" name="phone" type="phonenumber" validation="required" />
         <p class="text-right -mt-4 uk-margin-medium-bottom ">

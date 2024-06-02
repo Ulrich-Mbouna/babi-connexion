@@ -1,5 +1,5 @@
 <template>
-  <section class="uk-section uk-padding-remove-vertical uk-height-viewport">
+  <section class="uk-section uk-padding-remove-vertical min-h-dvh">
     <div class="uk-child-width-1-2@s h-screen uk-grid-small" uk-grid>
       <div class="uk-panel">
         <div class="uk-container uk-flex uk-flex-center uk-flex-middle h-full">
