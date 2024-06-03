@@ -11,6 +11,9 @@ export default {
                 },
                 secondary:{
                     DEFAULT: '#61C454'
+                },
+                sand: {
+                    DEFAULT: '#C4C4C4'
                 }
             },
             fontFamily: {

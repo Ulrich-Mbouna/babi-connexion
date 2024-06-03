@@ -4,9 +4,9 @@
 
 <template>
 <footer>
-  <section class="uk-section uk-section-small pb-0 uk-padding-small uk-section-muted" uk-scrollspy="target:[uk-scrollspy-class; cls: uk-animation-fade; delay:false]">
-    <div class="uk-container uk-container-large">
-      <div class="uk-child-width-1-2@s uk-flex-middle " uk-grid>
+  <section class="uk-section uk-section-small uk-padding-remove-top pb-5 uk-section-muted bg-sand" uk-scrollspy="target:[uk-scrollspy-class; cls: uk-animation-fade; delay:false]">
+    <div class="uk-container uk-container-expand">
+      <div class="uk-child-width-1-2@s uk-flex-middle text-black" uk-grid>
         <div class="uk-width-2-5@s">
           <div class="uk-margin uk-text-left" uk-scrollspy-class="uk-animation-slide-top-small">
             <nuxt-link to="/">
@@ -40,7 +40,7 @@
                   </div>
                 </li><li>
                 <div class="uk-panel">
-                  <nuxt-link class="uk-link-text uk-margin-remove-last-child">Conditions d'utilisations</nuxt-link>
+                  <nuxt-link to="/gcu" class="uk-link-text uk-margin-remove-last-child">Conditions d'utilisations</nuxt-link>
                 </div>
               </li>
 
@@ -94,7 +94,6 @@
       </div>
     </div>
   </section>
-
 </footer>
 </template>
 

@@ -121,12 +121,17 @@
             <h2>Ici la Map</h2>
           </div>
         </div>
-        <TheFooter />
       </div>
     </NuxtLayout>
   </div>
 </template>
 <script lang="ts" setup>
+definePageMeta({
+  name: 'Contact'
+})
+useHead({
+  title: 'Contact'
+})
 </script>
 <style scoped>
 

@@ -139,7 +139,6 @@
             </div>
           </div>
         </div>
-        <TheFooter/>
       </div>
     </NuxtLayout>
   </div>
