@@ -189,7 +189,7 @@
     <section class="uk-section uk-section-small uk-section-muted" id="publicity">
       <div class="uk-container uk-container-expand">
       <div class="uk-placeholder uk-text-center">
-        <p class="text-xl md:text-5xl">Espace publicit</p>
+        <p class="text-xl md:text-5xl">Espace publicité</p>
       </div>
       </div>
     </section>

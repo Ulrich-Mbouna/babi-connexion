@@ -36,11 +36,12 @@
                 </li>
                 <li>
                   <div class="uk-panel">
-                    <nuxt-link class="uk-link-text uk-margin-remove-last-child">Politique de confidentialité</nuxt-link>
+                    <nuxt-link to="/politique-confidentialité" class="uk-link-text uk-margin-remove-last-child">Politique de confidentialité</nuxt-link>
                   </div>
-                </li><li>
+                </li>
+                <li>
                 <div class="uk-panel">
-                  <nuxt-link to="/gcu" class="uk-link-text uk-margin-remove-last-child">Conditions d'utilisations</nuxt-link>
+                  <nuxt-link to="/condition-utilisation" class="uk-link-text uk-margin-remove-last-child">Conditions d'utilisations</nuxt-link>
                 </div>
               </li>
 
