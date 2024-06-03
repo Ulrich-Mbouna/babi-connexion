@@ -8,6 +8,10 @@ $text-primary-color: $primary-color;
 $base-link-hover-text-decoration: none;
 $global-font-family: 'Poppins', sans-serif;
 $base-margin-vertical: 0;
+$dotnav-item-active-background: $primary-color;
+$dotnav-item-background: white;
+$heading-line-border-width: .5rem;
+$heading-line-border: $primary-color;
 
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";

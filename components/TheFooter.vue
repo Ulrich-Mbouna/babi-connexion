@@ -4,7 +4,7 @@
 
 <template>
 <footer>
-  <section class="uk-section uk-section-small pb-0 uk-padding-small uk-section-default" uk-scrollspy="target:[uk-scrollspy-class; cls: uk-animation-fade; delay:false]">
+  <section class="uk-section uk-section-small pb-0 uk-padding-small uk-section-muted" uk-scrollspy="target:[uk-scrollspy-class; cls: uk-animation-fade; delay:false]">
     <div class="uk-container uk-container-large">
       <div class="uk-child-width-1-2@s uk-flex-middle " uk-grid>
         <div class="uk-width-2-5@s">
@@ -26,7 +26,7 @@
               <ul class="uk-list uk-text-left" uk-scrollspy>
                 <li>
                   <div class="uk-panel">
-                    <nuxt-link class="uk-link-text uk-margin-remove-last-child">A propos</nuxt-link>
+                    <nuxt-link to="/about" class="uk-link-text uk-margin-remove-last-child">A propos</nuxt-link>
                   </div>
                 </li>
                 <li>
