@@ -9,9 +9,9 @@
           <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
             <div class=""  uk-scrollspy-class>
               <div class="uk-position-relative" uk-slider>
-                <div class="uk-slider-items h-full">
-                  <div class="h-full">
-                    <img class="object-cover h-full" alt="" height="670" src="/images/about-image.jpg" width="631">
+                <div class="uk-slider-items h-full [&_img]:rounded-md">
+                  <div class="h-full ">
+                    <img class="object-cover h-full " alt="" height="670" src="/images/about-image.jpg" width="631">
                   </div>
                   <div class="">
                     <img class="object-cover h-full" alt="" height="670" src="/images/about-image.jpg" width="631">
