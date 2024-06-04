@@ -12,6 +12,9 @@ $dotnav-item-active-background: $primary-color;
 $dotnav-item-background: white;
 $heading-line-border-width: .5rem;
 $heading-line-border: $primary-color;
+$base-heading-margin-top: 0;
+$offcanvas-bar-background: #fff;
+$offcanvas-bar-color-mode: dark;
 
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";

@@ -36,7 +36,7 @@
                 </li>
                 <li>
                   <div class="uk-panel">
-                    <nuxt-link to="/politique-confidentialité" class="uk-link-text uk-margin-remove-last-child">Politique de confidentialité</nuxt-link>
+                    <nuxt-link to="/politique-confidentialite" class="uk-link-text uk-margin-remove-last-child">Politique de confidentialité</nuxt-link>
                   </div>
                 </li>
                 <li>
