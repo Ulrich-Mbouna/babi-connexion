@@ -15,7 +15,7 @@ $heading-line-border: $primary-color;
 $base-heading-margin-top: 0;
 $offcanvas-bar-background: #fff;
 $offcanvas-bar-color-mode: dark;
-
+$slidenav-color:$primary-color;
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
 
@@ -32,6 +32,13 @@ $offcanvas-bar-color-mode: dark;
 }
 @mixin hook-notification() {
   @apply rounded-md
+}
+
+@mixin hook-slidenav-previous() {
+  @apply font-bold bg-primary text-white rounded-full hover:text-primary hover:bg-white transition-all duration-500
+}
+@mixin hook-slidenav-next() {
+ @include hook-slidenav-previous()
 }
 
 @import "uikit/src/scss/uikit-theme.scss";

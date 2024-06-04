@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .btn-secondary {
+        @apply !bg-black text-white !border-0 hover:!bg-white duration-500 transition-all
+    }
+}
