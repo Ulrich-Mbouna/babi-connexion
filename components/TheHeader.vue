@@ -4,7 +4,7 @@
       <div class="items-center"
            uk-navbar="dropbar:true; dropbar-anchor:!.uk-navbar-container; target:!.uk-navbar">
         <div class="uk-navbar-left">
-          <nuxt-link to="#" aria-label="Back to Home" class="uk-navbar-item uk-logo">
+          <nuxt-link to="/" aria-label="Back to Home" class="uk-navbar-item uk-logo">
             <img alt="Baby Connexion Logo" src="/images/baby-connexion-logo.svg">
           </nuxt-link>
         </div>

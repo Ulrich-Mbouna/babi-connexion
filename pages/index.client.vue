@@ -20,52 +20,7 @@
     </section>
     <section class="uk-section uk-section-small uk-padding-small uk-section-muted" uk-sticky>
       <div class="uk-container uk-container-expand">
-        <div class="uk-child-width-1-3@s uk-flex-between uk-child-width-1-6@m
-              uk-grid-small" uk-grid uk-toggle="mode:media; media: (min-width: 375px),; cls:uk-child-width-1-2">
-          <div class="uk-panel">
-            <select id="" class="uk-select" name="">
-              <option disabled selected value="">Type de bien</option>
-              <option value="">Location</option>
-              <option value="">Vente</option>
-              <option value="">Meuble</option>
-            </select>
-          </div>
-          <div class="uk-panel">
-            <select id="" class="uk-select" name="">
-              <option disabled selected value="">Ville</option>
-              <option value="">Abidjan</option>
-              <option value="">Yaounde</option>
-              <option value="">Douala</option>
-            </select>
-          </div>
-          <div class="uk-panel">
-            <select id="" class="uk-select" name="">
-              <option disabled selected value="">Commune</option>
-              <option value="">Abidjan</option>
-              <option value="">Yaounde</option>
-              <option value="">Douala</option>
-            </select>
-          </div>
-          <div class="uk-panel ">
-            <select id="" class="uk-select" name="">
-              <option disabled selected value="">Quartier</option>
-              <option value="">Abidjan</option>
-              <option value="">Yaounde</option>
-              <option value="">Douala</option>
-            </select>
-          </div>
-          <div class="uk-panel">
-            <select id="" class="uk-select" name="">
-              <option disabled selected value="">Budget Max</option>
-              <option value="">Abidjan</option>
-              <option value="">Yaounde</option>
-              <option value="">Douala</option>
-            </select>
-          </div>
-          <div class="uk-panel text-center">
-            <button class="uk-button uk-button-primary uk-width-1-1 ">Rechercher</button>
-          </div>
-        </div>
+        <FilterNav/>
       </div>
     </section>
     <section id="top-announces" class="uk-section uk-section-xsmall">
@@ -139,7 +94,6 @@
 
 <script lang="ts" setup>
 import Card from "~/components/Style/Card.vue";
-
 definePageMeta({
   layout: false
 })
