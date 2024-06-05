@@ -1,13 +1,17 @@
 <script lang="ts" setup>
-import {useToast} from "maz-ui";
 
 definePageMeta({
   name: 'Login',
   layout: 'auth',
+  middleware: 'auth',
   auth: {
     unauthenticatedOnly: true,
-    navigateAuthenticatedTo: '/',
+    navigateAuthenticatedTo: '/dashboard',
   }
+})
+
+useHead({
+  title: 'Connexion'
 })
 
 //
@@ -15,7 +19,7 @@ definePageMeta({
 
 <template>
   <div class="uk-card uk-card-body uk-card-small">
-    <h3 class="font-medium uk-card-title max-sm:text-xl"> Se connecter à son compte</h3>
+    <h3 class="font-medium uk-card-title max-sm:text-xl uk-margin"> Se connecter à son compte</h3>
     <div class="login-mode">
       <LoginWithPassword />
     </div>

@@ -11,14 +11,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@formkit/addons": "^1.6.3",
-    "@formkit/core": "^1.6.3",
-    "@formkit/icons": "^1.6.3",
-    "@formkit/nuxt": "^1.6.3",
-    "@formkit/vue": "^1.6.3",
+    "@formkit/addons": "^1.6.5",
+    "@formkit/core": "^1.6.5",
+    "@formkit/icons": "^1.6.5",
+    "@formkit/nuxt": "^1.6.5",
+    "@formkit/vue": "^1.6.5",
     "@nuxt/fonts": "^0.7.0",
     "@nuxtjs/tailwindcss": "^6.12.0",
-    "@sidebase/nuxt-auth": "^0.7.2",
+    "@sidebase/nuxt-auth": "0.8.0-alpha.2",
     "libphonenumber-js": "^1.11.2",
     "maz-ui": "^3.43.4",
     "nuxt": "^3.11.2",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/uikit": "^3.14.5",
     "nuxt-icon": "^0.6.10",
-    "sass": "^1.77.2",
+    "sass": "^1.77.4",
     "typescript": "^5.4.5",
     "uikit": "^3.21.5",
     "vue-tsc": "^1"

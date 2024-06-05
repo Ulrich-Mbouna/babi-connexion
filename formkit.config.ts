@@ -10,7 +10,6 @@ export default defineFormKitConfig({
         classes: {
             input: "rounded-md",
             inner: 'w-full',
-            label: 'uk-form-label',
             wrapper: 'w-full',
             outer:'w-full max-w-full'
         }

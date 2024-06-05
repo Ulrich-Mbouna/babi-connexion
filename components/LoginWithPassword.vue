@@ -3,14 +3,19 @@
 import type {FormKitNode} from "@formkit/core";
 import {useToast} from "maz-ui";
 
+defineOptions({
+  name: 'LoginWithPassword'
+})
+
 const {signIn} = useAuth()
 const toast = useToast()
 // Functions
 const handleSignIn = async (data: SignInPayload | LoginWithOTP, node: FormKitNode) => {
   try {
-    const res = await signIn(data)
+    await signIn(data, {
+      callbackUrl: '/dashboard'
+    })
     toast.success("Connexion réussit")
-    console.log({res})
     // navigateTo("/register")
   } catch (error) {
     if (error.data?.errors) {

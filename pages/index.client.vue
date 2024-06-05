@@ -94,6 +94,7 @@
 
 <script lang="ts" setup>
 import Card from "~/components/Style/Card.vue";
+
 definePageMeta({
   layout: false
 })

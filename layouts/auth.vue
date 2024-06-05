@@ -5,7 +5,9 @@
         <div class="uk-container uk-flex uk-flex-center uk-flex-middle h-full">
           <div class="">
             <div class="uk-margin-medium text-center">
-              <img alt="Baby connexion Logo" class="m-auto" src="/images/baby-connexion-logo.svg">
+              <nuxt-link to="/">
+                <img alt="Baby connexion Logo" class="m-auto" src="/images/baby-connexion-logo.svg">
+              </nuxt-link>
             </div>
             <div class="">
               <slot />

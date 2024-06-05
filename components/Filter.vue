@@ -106,7 +106,7 @@
   </div>
 </template>
 <script setup>
-definePageMeta({
+defineOptions({
   name: 'Filter'
 })
 const villes = {

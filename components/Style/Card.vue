@@ -7,14 +7,14 @@
       <div class="uk-card-badge uk-label">à louer</div>
       <div class="uk-child-width-1-2 uk-flex-middle uk-flex-between" uk-grid>
         <div class="">
-          <h3 class="uk-card-title mb-1 text-2xl">Appartement</h3>
-          <p class="flex m-0 text-sm items-center">
-            <span class="align-center" uk-icon="icon:location; ratio:.7"></span>
+          <h4 class="uk-card-title  text-lg">Appartement</h4>
+          <p class="flex m-0 text-xs items-center">
+            <Icon name="carbon:location" />
             <span>Abidjan/Marcory</span>
           </p>
         </div>
         <div class="text-right">
-          <h4 class="m-0 text-primary">500 000 fcfa</h4>
+          <h5 class="m-0 text-primary">500 000 fcfa</h5>
         </div>
       </div>
     </div>

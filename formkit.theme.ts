@@ -53,7 +53,7 @@ const classes: Record<string, Record<string, boolean>> = {
   "family:button__input": {
     "appearance-none": true,
     "[color-scheme:light]": true,
-    "dark:[color-scheme:dark]": true,
+    "dark:[color-scheme:dark]": false,
     "selection:bg-white": true,
     "selection:text-neutral-700": true,
     "group-data-[has-overlay]:selection:!text-transparent": true,
@@ -78,7 +78,9 @@ const classes: Record<string, Record<string, boolean>> = {
     "border-primary": true,
     "group-[]/repeater:shadow-sm": true,
     "group-[]/multistep:shadow-sm": true,
-    "dark:border-primary": true
+    "dark:border-primary": true,
+    "dark:hover:bg-primary": true,
+    "dark:hover:text-white": true,
   },
   "family:box__wrapper": {
     "inline-flex": true,
@@ -578,18 +580,19 @@ const classes: Record<string, Record<string, boolean>> = {
   "button__input": {
     "appearance-none": true,
     "[color-scheme:light]": true,
-    "dark:[color-scheme:dark]": true,
+    "dark:[color-scheme:dark]": false,
     "selection:bg-blue-100": true,
     "selection:text-neutral-700": true,
     "group-data-[has-overlay]:selection:!text-transparent": true,
     "bg-white": true,
-    "hover:bg-primary": true,
     "transition-all": true,
+    "text-primary": true,
     "w-full": true,
     "justify-center": true,
     "duration-500": true,
     "hover:text-white": true,
-    "dark:text-white": true,
+    "hover:bg-primary": true,
+    "dark:text-white": false,
     "dark:bg-transparent": true,
     "dark:hover:bg-blue-50/5": true
   },
@@ -1019,7 +1022,7 @@ const classes: Record<string, Record<string, boolean>> = {
   "submit__input": {
     "appearance-none": true,
     "[color-scheme:light]": true,
-    "dark:[color-scheme:dark]": true,
+    "dark:[color-scheme:dark]": false,
     "selection:bg-blue-100": true,
     "selection:text-neutral-700": true,
     "group-data-[has-overlay]:selection:!text-transparent": true,
@@ -1037,7 +1040,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "dark:disabled:border-neutral-100": true,
     "dark:disabled:bg-neutral-500": true,
     "dark:disabled:text-neutral-200": true,
-    "dark:text-white": true,
+    "dark:text-white": false,
     "dark:ring-offset-blue-500": true,
     "before:transition-all": true,
     "group-data-[loading=true]/form:before:content['']": true,
@@ -3216,7 +3219,7 @@ const classes: Record<string, Record<string, boolean>> = {
     "group-data-[tab-style=progress]/wrapper:after:absolute": true,
     "group-data-[tab-style=progress]/wrapper:after:top-[0.5em]": true,
     "group-data-[tab-style=progress]/wrapper:after:left-[calc(50%+0.5em)]": true,
-    "group-data-[tab-style=progress]/wrapper:after:bg-neutral-300": true,
+    "group-data-[tab-style=progress]/wrapper:after:bg-primary": true,
     "group-data-[tab-style=progress]/wrapper:data-[valid=true]:data-[visited=true]:after:bg-primary": true,
     "group-data-[tab-style=progress]/wrapper:last:after:hidden": true,
     "dark:group-data-[tab-style=progress]/wrapper:after:bg-neutral-600": true,
@@ -3313,7 +3316,7 @@ const globals: Record<string, Record<string, boolean>> = {
     "text-sm": true,
     "font-bold": true,
     "mb-1": true,
-    "dark:text-neutral-300": true
+    "dark:text-neutral-300": false
   },
   "legend": {
     "block": true,
@@ -3325,7 +3328,7 @@ const globals: Record<string, Record<string, boolean>> = {
   "input": {
     "appearance-none": true,
     "[color-scheme:light]": true,
-    "dark:[color-scheme:dark]": true,
+    "dark:[color-scheme:dark]": false,
     "selection:bg-blue-100": true,
     "selection:text-neutral-700": true,
     "group-data-[has-overlay]:selection:!text-transparent": true

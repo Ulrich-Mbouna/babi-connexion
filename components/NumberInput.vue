@@ -2,6 +2,9 @@
 const props = defineProps({
   context: Object
 })
+defineOptions({
+      name: 'NumberInput'
+    })
 
 const handleInput = (data) => {
   if (data.isValid) {

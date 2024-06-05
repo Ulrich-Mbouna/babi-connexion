@@ -3,6 +3,10 @@ import type { FormKitNode } from "@formkit/core";
 import UIkit from "uikit";
 import { useToast } from "maz-ui";
 
+defineOptions({
+  name: 'LoginWithOTP'
+})
+
 const phone = ref("")
 const toast = useToast()
 const runtimeConfig = useRuntimeConfig()

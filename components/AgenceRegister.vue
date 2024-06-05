@@ -3,6 +3,11 @@ import NumberInput from "~/components/NumberInput.vue";
 import {createInput} from "@formkit/vue";
 import type {FormKitNode} from "@formkit/core";
 import {useToast} from "maz-ui";
+
+defineOptions({
+  name: 'AgenceRegister'
+})
+
 //
 const toast = useToast()
 
@@ -62,8 +67,10 @@ const handleSubmit = async (data: {"multi-steps": {personal: UserRegister, ident
       <FormKit label="Adresse Email" type="email" name="email" placeholder='alex@gmail.com' validation="email|required" />
       <FormKit
           suffix-icon="eyeClosed" @suffix-icon-click="usePasswordVisibility"
+          placeholder="Mot de passe"
           label="Mot de Passe" name="password" type="password" validation="password|required" />
       <FormKit
+          placeholder="Confirmer le mot de passe"
           suffix-icon="eyeClosed" name="password_confirm" @suffix-icon-click="usePasswordVisibility"
           label="Confirmer mot de password" type="password" validation="confirm|required" />
     </FormKit>

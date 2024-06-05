@@ -1,10 +1,9 @@
 <template>
-  <nav class="uk-navbar-container bg-black/25 uk-light">
+  <nav class="uk-navbar-container bg-black/25">
     <div class="uk-container uk-container-expand">
-      <div class="items-center"
-           uk-navbar="dropbar:true; dropbar-anchor:!.uk-navbar-container; target:!.uk-navbar">
+      <div class="items-center" v-bind="navbarAttributes">
         <div class="uk-navbar-left">
-          <nuxt-link to="/" aria-label="Back to Home" class="uk-navbar-item uk-logo">
+          <nuxt-link aria-label="Back to Home" class="uk-navbar-item uk-logo" to="/">
             <img alt="Baby Connexion Logo" src="/images/baby-connexion-logo.svg">
           </nuxt-link>
         </div>
@@ -43,27 +42,69 @@
               </li>
               <li class="uk-nav-divider"></li>
               <li>
-                <nuxt-link to="/register" class="uk-button uk-button-small uk-button-text text-black">Créer un compte
+                <nuxt-link class="uk-button uk-button-small uk-button-text text-black" to="/register">Créer un compte
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/login" class="uk-button uk-button-small uk-button-default text-black">Se connecter
+                <nuxt-link class="uk-button uk-button-small uk-button-default text-black" to="/login">Se connecter
                 </nuxt-link>
               </li>
             </ul>
           </div>
 
-          <div class="uk-navbar-item gap-3 uk-visible@m">
-            <nuxt-link to="/register" class="uk-button uk-button-small uk-button-text">Créer un compte</nuxt-link>
-            <nuxt-link to="/login" class="uk-button uk-button-small uk-button-text">Se connecter</nuxt-link>
+          <div class="uk-navbar-item  uk-visible@m">
+            <div v-if="!isLogged" class="flex gap-3 uk-light">
+              <nuxt-link class="uk-button uk-button-small uk-button-text" to="/register">Créer un compte</nuxt-link>
+              <nuxt-link class="uk-button uk-button-small uk-button-text" to="/login">Se connecter</nuxt-link>
+            </div>
+            <div v-else class="">
+              <a href="#" class="uk-light hover:text-white text-lg">
+                <Icon name="mingcute:user-4-fill" size="1.5em"/>
+                {{ user.firstName + ' ' + user.name }}
+              </a>
+              <div class="uk-navbar-dropdown uk-padding-small rounded text-xl">
+                <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-secondary">
+                  <li class="uk-active">
+                    <a href="">
+                      <Icon name="uil:setting" size="1.3em"/>
+                      Setting
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <Icon name="mdi:account" size="1.3em"/>
+                      Account
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <Icon name="material-symbols:logout" size="1.3em"/>
+                      Déconnexion
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </nav>
 </template>
-<script>
-export default {
-  name: 'TheHeader'
-}
+<script setup>
+defineOptions({})
+
+const {data: user, status} = useAuth()
+
+const isLogged = computed(() => {
+  return status.value === "authenticated"
+})
+
+const navbarAttributes = computed(() => {
+  return !isLogged ? {
+    'uk-navbar':"dropbar:true; dropbar-anchor:!.uk-navbar-container; target:!.uk-navbar; mode:click"
+  } : {
+    'uk-navbar':"mode:click"
+  }
+})
 </script>

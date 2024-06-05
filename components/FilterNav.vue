@@ -51,10 +51,9 @@
   </div>
 </template>
 <script setup>
-definePageMeta({
+defineOptions({
   name: 'FilterNav'
 })
-
 const props = defineProps({
   classes: {
     type: String,

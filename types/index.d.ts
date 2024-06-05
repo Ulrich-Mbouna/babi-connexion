@@ -43,6 +43,23 @@ declare global {
         status: boolean,
         message: string,
     }
+    interface LoginResponse {
+        status: boolean,
+        message: string,
+        user: UserData,
+        tokens: { access: object, refresh: object }
+    }
+
+    interface UserData {
+        id: string,
+        name: string,
+        firstName: string,
+        email: string,
+        phone: number,
+        role: sring,
+        status: string,
+        media: object,
+    }
 
 }
 
