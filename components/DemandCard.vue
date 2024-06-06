@@ -30,7 +30,7 @@
             <li>
               <div class="uk-grid-small" uk-grid>
                 <div class="uk-width-1-2 font-semibold">Localisation : </div>
-                <div class="">Abidjan,Marcory quartier residentiel</div>
+                <div class="">Abidjan,Marcory quartier résidentiel</div>
               </div>
             </li>
           </ul>

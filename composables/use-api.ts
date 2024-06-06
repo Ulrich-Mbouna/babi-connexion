@@ -8,7 +8,7 @@ export default <T>(path:string, options: UseFetchOptions<T> = {}) => {
         key: hash(Date.now()),
     } : {}
 
-    const accessToken = useCookie('accessToken');
+    const accessToken = useCookie('auth.refresh-token');
 
     const defaults: UseFetchOptions<T> = {
         ...options,

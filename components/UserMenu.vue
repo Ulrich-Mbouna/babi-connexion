@@ -16,13 +16,13 @@
         <div class="uk-dropdown user-drop"
              data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-bottom-small; duration: 150">
           <ul class="uk-nav uk-dropdown-nav uk-text-left">
-            <li><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
-            <li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
-            <li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
+            <li><a href="#"><span class="text-primary" data-uk-icon="icon: info"></span> Summary</a></li>
+            <li><a href="#"><span class="text-primary" data-uk-icon="icon: refresh"></span> Edit</a></li>
+            <li><a href="#"><span class="text-primary" data-uk-icon="icon: settings"></span> Configuration</a></li>
             <li class="uk-nav-divider"></li>
-            <li><a href="#"><span data-uk-icon="icon: image"></span> Your Data</a></li>
+            <li><a href="#"><span class="text-primary" data-uk-icon="icon: image"></span> Your Data</a></li>
             <li class="uk-nav-divider"></li>
-            <li><a href="#"><span data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
+            <li><a href="#"><span class="text-primary" data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
           </ul>
         </div>
         <!-- /user dropdown -->
@@ -31,9 +31,9 @@
     <div class="left-nav-wrap">
       <ul class="uk-nav uk-nav-secondary uk-nav-parent-icon uk-margin-lef" data-uk-nav>
         <li class="uk-nav-header font-bold">Mon Espace</li>
-        <li><nuxt-link to="/demandes"><span data-uk-icon="icon: comments" class="uk-margin-small-right"></span>Demandes</nuxt-link></li>
-        <li><nuxt-link to="#"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Visites</nuxt-link></li>
-        <li class="uk-parent"><nuxt-link to="#"><span data-uk-icon="icon: thumbnails" class="uk-margin-small-right"></span>Propositions</nuxt-link>
+        <li><nuxt-link to="/demandes"><span  data-uk-icon="icon: comments" class="uk-margin-small-right text-primary"></span>Demandes</nuxt-link></li>
+        <li><nuxt-link to="#"><span  data-uk-icon="icon: users" class="uk-margin-small-right text-primary"></span>Visites</nuxt-link></li>
+        <li class="uk-parent"><nuxt-link to="#"><span  data-uk-icon="icon: thumbnails" class="uk-margin-small-right text-primary"></span>Propositions</nuxt-link>
           <ul class="uk-nav-sub">
             <li><a title="Article" href="https://zzseba78.github.io/Kick-Off/article.html">Article</a></li>
             <li><a title="Album" href="https://zzseba78.github.io/Kick-Off/album.html">Album</a></li>
@@ -45,8 +45,8 @@
             <li><a title="Login-Dark" href="https://zzseba78.github.io/Kick-Off/login-dark.html">Login - Dark</a></li>
           </ul>
         </li>
-        <li><nuxt-link to="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span>Paiements</nuxt-link></li>
-        <li><nuxt-link to="#"><span data-uk-icon="icon: thumbnails" class="uk-margin-small-right"></span>Rapport & Stats</nuxt-link>
+        <li><nuxt-link to="#"><span  data-uk-icon="icon: album" class="uk-margin-small-right text-primary"></span>Paiements</nuxt-link></li>
+        <li><nuxt-link to="#"><span  data-uk-icon="icon: thumbnails" class="uk-margin-small-right text-primary"></span>Rapport & Stats</nuxt-link>
         </li>
       </ul>
       <div class="left-content-box uk-margin-top hidden">

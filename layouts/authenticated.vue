@@ -8,6 +8,7 @@ const isLoggedIn = computed(() => status.value === 'authenticated')
 </script>
 
 <template>
+<div class="">
   <!--HEADER-->
   <header id="top-head" class="uk-position-fixed">
     <div class="uk-container uk-container-expand bg-primary/80">
@@ -80,6 +81,7 @@ const isLoggedIn = computed(() => status.value === 'authenticated')
     </div>
   </div>
   <!-- /OFFCANVAS -->
+</div>
 </template>
 <style>
 @import "assets/css/dashboard.css";

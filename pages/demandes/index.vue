@@ -4,9 +4,7 @@ definePageMeta({
   layout: 'authenticated'
 })
 
-import DemandCard from "~/pages/demandes/DemandCard.vue";
-
-const {data:demandes, pending, error} = await useApi("/requests")
+const { data:demandes, pending, error} = await useApi("/requests")
 </script>
 
 <template>
