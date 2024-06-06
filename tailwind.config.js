@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 export default {
+    darkMode: 'selector',
     content: [
         './formkit.theme.ts'
     ],
@@ -17,6 +18,9 @@ export default {
                 },
                 silver: {
                     light: '#d9d9d9'
+                },
+                green: {
+                    apple: '#61C454'
                 }
             },
             fontFamily: {

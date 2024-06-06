@@ -1,11 +1,13 @@
 <template>
   <div class="">
     <div class="left-logo uk-flex uk-flex-middle uk-flex-center my-1">
-      <img class="custom-logo" src="/images/baby-connexion-logo.svg" alt="">
+      <nuxt-link to="/"  >
+        <img class="custom-logo" src="/images/baby-connexion-logo.svg" alt="">
+      </nuxt-link>
     </div>
     <div class="left-content-box">
       <img src="/images/ulrich_avatar.png" alt="" class="uk-border-circle uk-width-small profile-img">
-      <h4 class="uk-text-center uk-margin-remove-vertical text-light font-medium">{{ user.firstName + ' ' + user.name }}</h4>
+      <h4 class="uk-text-center uk-margin-remove-vertical text-light font-medium">{{ user?.firstName + ' ' + user?.name }}</h4>
 
       <div class="uk-position-relative uk-text-center uk-display-block uk-hidden">
         <a href="#" class="uk-text-small uk-text-muted uk-display-block uk-text-center"
@@ -29,9 +31,9 @@
     <div class="left-nav-wrap">
       <ul class="uk-nav uk-nav-secondary uk-nav-parent-icon uk-margin-lef" data-uk-nav>
         <li class="uk-nav-header font-bold">Mon Espace</li>
-        <li><a href="#"><span data-uk-icon="icon: comments" class="uk-margin-small-right"></span>Demande</a></li>
-        <li><a href="#"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Visites</a></li>
-        <li class="uk-parent"><a href="#"><span data-uk-icon="icon: thumbnails" class="uk-margin-small-right"></span>Propositions</a>
+        <li><nuxt-link to="/demandes"><span data-uk-icon="icon: comments" class="uk-margin-small-right"></span>Demandes</nuxt-link></li>
+        <li><nuxt-link to="#"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Visites</nuxt-link></li>
+        <li class="uk-parent"><nuxt-link to="#"><span data-uk-icon="icon: thumbnails" class="uk-margin-small-right"></span>Propositions</nuxt-link>
           <ul class="uk-nav-sub">
             <li><a title="Article" href="https://zzseba78.github.io/Kick-Off/article.html">Article</a></li>
             <li><a title="Album" href="https://zzseba78.github.io/Kick-Off/album.html">Album</a></li>
@@ -43,8 +45,8 @@
             <li><a title="Login-Dark" href="https://zzseba78.github.io/Kick-Off/login-dark.html">Login - Dark</a></li>
           </ul>
         </li>
-        <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span>Paiements</a></li>
-        <li><a href="#"><span data-uk-icon="icon: thumbnails" class="uk-margin-small-right"></span>Rapport & Stats</a>
+        <li><nuxt-link to="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span>Paiements</nuxt-link></li>
+        <li><nuxt-link to="#"><span data-uk-icon="icon: thumbnails" class="uk-margin-small-right"></span>Rapport & Stats</nuxt-link>
         </li>
       </ul>
       <div class="left-content-box uk-margin-top hidden">

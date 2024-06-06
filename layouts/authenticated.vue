@@ -14,8 +14,8 @@ const isLoggedIn = computed(() => status.value === 'authenticated')
       <nav class="uk-navbar" data-uk-navbar="mode:click; duration: 250">
         <div class="uk-navbar-left">
           <div class="uk-navbar-item uk-hidden@m">
-            <a class="uk-logo" href="#">
-              <img class="custom-logo" src="/images/baby-connexion-logo.svg" alt=""></a>
+            <nuxt-link to="/" class="uk-logo" href="#">
+              <img class="custom-logo" src="/images/baby-connexion-logo.svg" alt=""></nuxt-link>
           </div>
           <ul class="uk-navbar-nav uk-visible@m uk-hidden">
             <li><a href="#">Accounts</a></li>
