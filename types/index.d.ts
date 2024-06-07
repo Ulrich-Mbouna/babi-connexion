@@ -61,6 +61,16 @@ declare global {
         media: object,
     }
 
+    interface Payment {
+        id: string
+        montant: number
+        status: 'pending' | 'processing' | 'success' | 'failed'
+        name: string,
+        type: string,
+        paiement_date: number,
+        image: string,
+    }
+
 }
 
 export  default {}

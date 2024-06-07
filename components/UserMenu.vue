@@ -45,8 +45,8 @@
             <li><a title="Login-Dark" href="https://zzseba78.github.io/Kick-Off/login-dark.html">Login - Dark</a></li>
           </ul>
         </li>
-        <li><nuxt-link to="#"><span  data-uk-icon="icon: album" class="uk-margin-small-right text-primary"></span>Paiements</nuxt-link></li>
-        <li><nuxt-link to="#"><span  data-uk-icon="icon: thumbnails" class="uk-margin-small-right text-primary"></span>Rapport & Stats</nuxt-link>
+        <li><nuxt-link to="/paiements"><span  data-uk-icon="icon: album" class="uk-margin-small-right uk-text-primary"></span>Paiements</nuxt-link></li>
+        <li><nuxt-link to="#"><span  data-uk-icon="icon: thumbnails" class="uk-margin-small-right uk-text-primary"></span>Rapport & Stats</nuxt-link>
         </li>
       </ul>
       <div class="left-content-box uk-margin-top hidden">
@@ -90,6 +90,7 @@
 defineOptions({
   name: 'UserMenu'
 })
+
 
 const {data:user} = useAuth()
 </script>
