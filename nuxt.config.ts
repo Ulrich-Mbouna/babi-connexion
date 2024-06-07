@@ -7,7 +7,8 @@ export default defineNuxtConfig({
         'maz-ui/nuxt',
         "@sidebase/nuxt-auth",
         "@nuxt/fonts",
-        "nuxt-icon"
+        "nuxt-icon",
+        "shadcn-nuxt"
     ],
     auth: {
       provider: {
